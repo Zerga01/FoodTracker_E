@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250C09BD25DBF630007C45E1 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250C09BC25DBF630007C45E1 /* RatingControl.swift */; };
 		258800BB25D83F54003293F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258800BA25D83F54003293F1 /* AppDelegate.swift */; };
 		258800BD25D83F54003293F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258800BC25D83F54003293F1 /* SceneDelegate.swift */; };
 		258800BF25D83F54003293F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258800BE25D83F54003293F1 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		250C09BC25DBF630007C45E1 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		258800B725D83F54003293F1 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		258800BA25D83F54003293F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		258800BC25D83F54003293F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				258800BA25D83F54003293F1 /* AppDelegate.swift */,
 				258800BC25D83F54003293F1 /* SceneDelegate.swift */,
 				258800BE25D83F54003293F1 /* ViewController.swift */,
+				250C09BC25DBF630007C45E1 /* RatingControl.swift */,
 				258800C025D83F54003293F1 /* Main.storyboard */,
 				258800C325D83F55003293F1 /* Assets.xcassets */,
 				258800C525D83F55003293F1 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250C09BD25DBF630007C45E1 /* RatingControl.swift in Sources */,
 				258800BF25D83F54003293F1 /* ViewController.swift in Sources */,
 				258800BB25D83F54003293F1 /* AppDelegate.swift in Sources */,
 				258800BD25D83F54003293F1 /* SceneDelegate.swift in Sources */,
@@ -445,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Inc.FoodTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Inc.FoodTracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
