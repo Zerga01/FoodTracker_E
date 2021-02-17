@@ -20,37 +20,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="926" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="68i-lM-4wI">
-                                <rect key="frame" x="20" y="64" width="374" height="106.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nji-vP-R0O" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                <rect key="frame" x="80" y="604" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bgF-pR-cAN"/>
+                                    <constraint firstAttribute="width" constant="250" id="kZa-MG-Luq"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="68i-lM-4wI">
+                                <rect key="frame" x="20" y="64" width="374" height="69.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-Up-C7G">
-                                        <rect key="frame" x="0.0" y="0.0" width="104.5" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <rect key="frame" x="132.5" y="0.0" width="109" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0X3-0V-qWn" userLabel="Name Texte Field">
-                                        <rect key="frame" x="0.0" y="34.5" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf5-6I-Zxs">
-                                        <rect key="frame" x="0.0" y="76.5" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                            <color key="titleShadowColor" systemColor="labelColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="203-t4-E2x"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="0X3-0V-qWn" secondAttribute="trailing" id="WYF-GT-2Da"/>
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="PAO-gb-OJK">
-                                <rect key="frame" x="47" y="178" width="320" height="320"/>
+                                <rect key="frame" x="47" y="148.5" width="320" height="320"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PAO-gb-OJK" secondAttribute="height" multiplier="1:1" id="ScR-mg-BT8"/>
@@ -59,21 +56,19 @@
                                     <outletCollection property="gestureRecognizers" destination="S9W-aK-7zC" appends="YES" id="coh-LM-rCT"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nji-vP-R0O" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                <rect key="frame" x="20" y="752" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="68i-lM-4wI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2cj-VY-37m"/>
+                            <constraint firstItem="nji-vP-R0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="5ic-gm-IhO"/>
                             <constraint firstItem="68i-lM-4wI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8l7-kc-Ea6"/>
                             <constraint firstItem="PAO-gb-OJK" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="160:409" id="Nqz-YW-Kb1"/>
                             <constraint firstItem="PAO-gb-OJK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="TfQ-vv-bgy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="68i-lM-4wI" secondAttribute="trailing" constant="20" id="kyA-w9-TTW"/>
-                            <constraint firstItem="PAO-gb-OJK" firstAttribute="top" secondItem="68i-lM-4wI" secondAttribute="bottom" constant="7.5" id="lgl-tm-lmx"/>
+                            <constraint firstItem="PAO-gb-OJK" firstAttribute="top" secondItem="68i-lM-4wI" secondAttribute="bottom" constant="15" id="lgl-tm-lmx"/>
+                            <constraint firstItem="nji-vP-R0O" firstAttribute="top" secondItem="PAO-gb-OJK" secondAttribute="bottom" constant="21.5" id="xZ3-NN-kcH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -95,9 +90,6 @@
     <resources>
         <image name="Image" width="540" height="540"/>
         <image name="beckground" width="5760" height="3840"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
